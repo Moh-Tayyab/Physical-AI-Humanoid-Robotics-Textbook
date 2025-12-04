@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -13,14 +13,14 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://ameen-alam.github.io',
+  url: 'https://Moh-Tayyab.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/Physical-AI-Humanoid-Robotics-Textbook/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ameen-alam', // Usually your GitHub org/user name.
+  organizationName: 'Muhammad-Tayyab', // Usually your GitHub org/user name.
   projectName: 'Physical-AI-Humanoid-Robotics-Textbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ameen-alam/Physical-AI-Humanoid-Robotics-Textbook/tree/main/',
+            'https://github.com/Moh-Tayyab/Physical-AI-Humanoid-Robotics-Textbook/tree/main/',
         },
         blog: false, // Disable blog for textbook
         theme: {
@@ -79,7 +79,7 @@ const config = {
             label: 'Textbook',
           },
           {
-            href: 'https://github.com/ameen-alam/Physical-AI-Humanoid-Robotics-Textbook',
+            href: 'https://github.com/Moh-Tayyab/Physical-AI-Humanoid-Robotics-Textbook',
             label: 'GitHub',
             position: 'right',
           },
@@ -115,11 +115,11 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/ameen-alam/Physical-AI-Humanoid-Robotics-Textbook',
+                href: 'https://github.com/Moh-Tayyab/Physical-AI-Humanoid-Robotics-Textbook',
               },
               {
                 label: 'Project Constitution',
-                href: 'https://github.com/ameen-alam/Physical-AI-Humanoid-Robotics-Textbook/blob/main/.specify/memory/constitution.md',
+                href: 'https://github.com/Moh-Tayyab/Physical-AI-Humanoid-Robotics-Textbook/blob/main/.specify/memory/constitution.md',
               },
             ],
           },
@@ -161,11 +161,11 @@ const config = {
         searchPagePath: 'search',
       },
       metadata: [
-        {name: 'keywords', content: 'robotics, physical AI, humanoid robots, ROS 2, Isaac Sim, VLA'},
-        {name: 'description', content: 'Comprehensive 13-week textbook for industry practitioners learning Physical AI and Humanoid Robotics'},
-        {property: 'og:title', content: 'Physical AI & Humanoid Robotics Textbook'},
-        {property: 'og:description', content: 'Master Physical AI, ROS 2, Digital Twins, and Humanoid Robotics in 13 weeks'},
-        {property: 'og:type', content: 'website'},
+        { name: 'keywords', content: 'robotics, physical AI, humanoid robots, ROS 2, Isaac Sim, VLA' },
+        { name: 'description', content: 'Comprehensive 13-week textbook for industry practitioners learning Physical AI and Humanoid Robotics' },
+        { property: 'og:title', content: 'Physical AI & Humanoid Robotics Textbook' },
+        { property: 'og:description', content: 'Master Physical AI, ROS 2, Digital Twins, and Humanoid Robotics in 13 weeks' },
+        { property: 'og:type', content: 'website' },
       ],
     }),
 };

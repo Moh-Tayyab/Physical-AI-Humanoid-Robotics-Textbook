@@ -2,8 +2,8 @@
 
 > Comprehensive 13-week textbook for industry practitioners: ROS 2, Digital Twin (Gazebo/Unity), NVIDIA Isaac Sim, and Vision-Language-Action models.
 
-[![Deploy to GitHub Pages](https://github.com/Ameen-Alam/Physical-AI-Humanoid-Robotics-Textbook/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ameen-Alam/Physical-AI-Humanoid-Robotics-Textbook/actions/workflows/deploy.yml)
-[![Build Validation](https://github.com/Ameen-Alam/Physical-AI-Humanoid-Robotics-Textbook/actions/workflows/build-validation.yml/badge.svg)](https://github.com/Ameen-Alam/Physical-AI-Humanoid-Robotics-Textbook/actions/workflows/build-validation.yml)
+[![Deploy to GitHub Pages](https://github.com/Moh-Tayyab/Physical-AI-Humanoid-Robotics-Textbook/actions/workflows/deploy.yml/badge.svg)](https://github.com/Moh-Tayyab/Physical-AI-Humanoid-Robotics-Textbook/actions/workflows/deploy.yml)
+[![Build Validation](https://github.com/Moh-Tayyab/Physical-AI-Humanoid-Robotics-Textbook/actions/workflows/build-validation.yml/badge.svg)](https://github.com/Moh-Tayyab/Physical-AI-Humanoid-Robotics-Textbook/actions/workflows/build-validation.yml)
 
 ## Overview
 
@@ -38,7 +38,7 @@ Choose one of three hardware configurations:
 
 ```bash
 # Clone the repository
-git clone https://github.com/Ameen-Alam/Physical-AI-Humanoid-Robotics-Textbook.git
+git clone https://github.com/Moh-Tayyab/Physical-AI-Humanoid-Robotics-Textbook.git
 cd Physical-AI-Humanoid-Robotics-Textbook
 
 # Install dependencies
@@ -104,7 +104,7 @@ All PRs must pass:
 
 ## Specification-Driven Development
 
-This project follows **Spec-Driven Development (SDD)** using [Spec-Kit Plus](https://github.com/Ameen-Alam/spec-kit-plus):
+This project follows **Spec-Driven Development (SDD)** using [Spec-Kit Plus](https://github.com/Moh-Tayyab/spec-kit-plus):
 
 1. **Constitution**: Core principles in [`.specify/memory/constitution.md`](.specify/memory/constitution.md)
 2. **Specifications**: Feature specs in [`specs/001-book-master-plan/spec.md`](specs/001-book-master-plan/spec.md)
@@ -149,8 +149,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/Ameen-Alam/Physical-AI-Humanoid-Robotics-Textbook/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Ameen-Alam/Physical-AI-Humanoid-Robotics-Textbook/discussions)
+- **Issues**: [GitHub Issues](https://github.com/Moh-Tayyab/Physical-AI-Humanoid-Robotics-Textbook/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Moh-Tayyab/Physical-AI-Humanoid-Robotics-Textbook/discussions)
 - **Documentation**: [Quickstart Guide](specs/001-book-master-plan/quickstart.md)
 
 ---

@@ -10,12 +10,10 @@ import RecentUpdates from '@site/src/components/RecentUpdates';
 import modules from '@site/src/data/modules.json';
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
 
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Comprehensive 13-week textbook for industry practitioners learning Physical AI and Humanoid Robotics">
+    <Layout>
       <header className={clsx('hero hero--primary')}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -30,7 +28,7 @@ export default function Home(): JSX.Element {
         </div>
       </header>
       <main>
-        <div className="container" style={{marginTop: '3rem', marginBottom: '3rem'}}>
+        <div className="container" style={{ marginTop: '3rem', marginBottom: '3rem' }}>
           <div className="homepage-container">
             <div>
               <h2>Course Modules</h2>

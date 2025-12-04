@@ -7,7 +7,7 @@ surface: agent
 model: claude-sonnet-4-5-20250929
 feature: 001-book-master-plan
 branch: 001-book-master-plan
-user: ameen-alam
+user: Moh-Tayyab
 command: continue from previous session
 labels: ["implementation", "MVP", "docusaurus", "build-validation", "user-story-1", "user-story-2"]
 links:
