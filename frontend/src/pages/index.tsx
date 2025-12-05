@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import ModuleCard from '@site/src/components/ModuleCard';
+import ModuleCard from '@site/src/components/ModuleCards';
 import QuickLinks from '@site/src/components/QuickLinks';
 import RecentUpdates from '@site/src/components/RecentUpdates';
 
