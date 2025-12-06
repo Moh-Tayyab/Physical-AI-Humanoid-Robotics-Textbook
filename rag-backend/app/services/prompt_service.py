@@ -36,18 +36,16 @@ class PromptService:
 
     def build_selected_text_rag_prompt(self, question: str, selected_text: str) -> str:
         """
-        Build a prompt for selected-text RAG
+        Build a prompt for selected-text RAG with strict context isolation
         """
-        prompt = f"""You are a helpful assistant for the Physical AI & Humanoid Robotics textbook.
-        Answer the question based solely on the provided selected text.
-        If the answer is not in the provided selected text, respond with "Not in selection." and explain why.
+        prompt = f"""You are an expert assistant. Answer the user's question USING ONLY THE FOLLOWING TEXT. If the answer is not in the text, say 'I don't know based on the selected text.' NEVER use any other knowledge.
 
-        Selected Text:
-        {selected_text}
+SELECTED TEXT:
+{selected_text}
 
-        Question: {question}
+Question: {question}
 
-        Answer:"""
+Answer:"""
 
         return prompt
 

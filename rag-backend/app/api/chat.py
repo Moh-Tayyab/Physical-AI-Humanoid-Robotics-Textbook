@@ -5,6 +5,7 @@ from app.database import get_db
 from app.schemas.chat import ChatRequest, ChatResponse, SelectedTextChatRequest
 from app.services.chat_service import chat_service
 from app.core.config import settings
+from app.services.agent_service import agent_rag_service
 import logging
 
 logger = logging.getLogger(__name__)
@@ -17,10 +18,10 @@ async def chat_endpoint(
     db: AsyncSession = Depends(get_db)
 ):
     """
-    Full-book RAG endpoint that answers questions based on the entire textbook content.
+    Full-book RAG endpoint that answers questions based on the entire textbook content using OpenAI Agents.
     """
     try:
-        # Process the query
+        # Process the query using the agent-based RAG service
         result = await chat_service.process_full_book_query(
             question=request.question,
             session_id=request.sessionId,
@@ -48,7 +49,7 @@ async def chat_selected_endpoint(
     db: AsyncSession = Depends(get_db)
 ):
     """
-    Selected-text RAG endpoint that answers questions based only on the provided text selection.
+    Selected-text RAG endpoint that answers questions based only on the provided text selection using OpenAI Agents.
     """
     try:
         # Validate selected text length
@@ -58,7 +59,7 @@ async def chat_selected_endpoint(
                 detail=f"Selected text too long: {len(request.selectedText)} characters. Maximum allowed: {settings.max_selected_text_length}"
             )
 
-        # Process the query
+        # Process the query using the agent-based RAG service
         result = await chat_service.process_selected_text_query(
             question=request.question,
             selected_text=request.selectedText,
