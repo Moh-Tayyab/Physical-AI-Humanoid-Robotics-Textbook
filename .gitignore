@@ -43,3 +43,4 @@ install/
 log/
 build/
 devel/
+node_modules
