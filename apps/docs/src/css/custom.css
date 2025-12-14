@@ -329,3 +329,270 @@
   background-size: 20px 20px;
   background-position: 0 0, 10px 0, 10px -10px, 0px 10px;
 }
+
+/* Professional heading styles - matching login button gradient */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero__title,
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  background: linear-gradient(135deg, #00F2FF, #FF00C1) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  color: transparent !important;
+  font-weight: 700 !important;
+  position: relative !important;
+  text-shadow: 0 2px 8px rgba(0, 242, 255, 0.2) !important;
+}
+
+h1,
+.markdown h1 {
+  font-size: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+  line-height: 1.2 !important;
+}
+
+h2,
+.markdown h2 {
+  font-size: 2rem !important;
+  margin-bottom: 1.25rem !important;
+  line-height: 1.3 !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 2px solid var(--grid-line) !important;
+}
+
+h3,
+.markdown h3 {
+  font-size: 1.75rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.4 !important;
+}
+
+h4,
+.markdown h4 {
+  font-size: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  line-height: 1.5 !important;
+}
+
+h5,
+.markdown h5 {
+  font-size: 1.25rem !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.6 !important;
+}
+
+h6,
+.markdown h6 {
+  font-size: 1.1rem !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Add premium glow effect to headings */
+h1::after,
+h2::after,
+h3::after {
+  content: '' !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: -5px !important;
+  width: 30% !important;
+  height: 2px !important;
+  background: var(--primary-gradient) !important;
+  opacity: 0.7 !important;
+  filter: blur(1px) !important;
+  box-shadow: 0 0 8px var(--neon-cyan) !important;
+}
+
+h2::after {
+  bottom: -8px !important;
+}
+
+/* Professional title styles - matching login button gradient */
+.title {
+  background: linear-gradient(135deg, #00F2FF, #FF00C1) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  color: transparent !important;
+  font-weight: 800 !important;
+  font-size: 3rem !important;
+  text-align: center !important;
+  margin-bottom: 2rem !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.02em !important;
+  text-shadow: 0 2px 8px rgba(0, 242, 255, 0.2) !important;
+  position: relative !important;
+}
+
+/* Navbar styling */
+.navbar {
+  background: rgba(11, 12, 16, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid var(--grid-line) !important;
+}
+
+.navbar__inner {
+  padding: 0.5rem 1rem !important;
+  max-width: 100% !important;
+}
+
+.navbar__brand {
+  color: var(--neon-cyan) !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.3) !important;
+}
+
+.navbar__brand:hover {
+  color: var(--neon-cyan) !important;
+  text-shadow: 0 0 12px var(--neon-cyan) !important;
+}
+
+.navbar__item {
+  color: var(--ifm-navbar-link-color) !important;
+  font-weight: 500 !important;
+}
+
+.navbar__item:hover {
+  color: var(--neon-cyan) !important;
+}
+
+.navbar__link {
+  color: var(--ifm-navbar-link-color) !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+  padding: 0.5rem 0.75rem !important;
+  transition: all 0.2s ease !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+.navbar__link:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: var(--neon-cyan) !important;
+  border-color: var(--neon-cyan) !important;
+}
+
+.navbar__toggle {
+  color: var(--ifm-navbar-link-color) !important;
+}
+
+.navbar__toggle:hover {
+  color: var(--neon-cyan) !important;
+}
+
+/* Mobile sidebar */
+.navbar-sidebar {
+  background: var(--raisin-black) !important;
+}
+
+.navbar-sidebar__brand {
+  background: rgba(11, 12, 16, 0.9) !important;
+  backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid var(--grid-line) !important;
+}
+
+.navbar-sidebar__back {
+  color: var(--neon-cyan) !important;
+  font-weight: 500 !important;
+}
+
+/* Footer styling */
+.footer {
+  background: rgba(11, 12, 16, 0.9) !important;
+  backdrop-filter: blur(20px) !important;
+  border-top: 1px solid var(--grid-line) !important;
+  padding: 3rem 1rem 1.5rem !important;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: transparent !important;
+  background: rgba(11, 12, 16, 0.9) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+.footer__title {
+  color: var(--neon-cyan) !important;
+  font-weight: 600 !important;
+  margin-bottom: 1rem !important;
+  font-size: 1.1rem !important;
+  text-shadow: 0 0 8px rgba(0, 242, 255, 0.3) !important;
+  font-family: var(--ifm-font-family-base) !important;
+}
+
+.footer__link-item {
+  color: var(--ifm-footer-link-color) !important;
+  line-height: 2 !important;
+  transition: all 0.2s ease !important;
+  position: relative !important;
+  padding-left: 0.75rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.footer__link-item:hover {
+  color: var(--neon-cyan) !important;
+  transform: translateX(4px) !important;
+}
+
+.footer__link-item::before {
+  content: '▶' !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  color: var(--neon-cyan) !important;
+  opacity: 0.6 !important;
+  font-size: 0.7rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.footer__link-item:hover::before {
+  opacity: 1 !important;
+  transform: translateX(2px) !important;
+}
+
+.footer__items {
+  margin-bottom: 1.5rem !important;
+}
+
+.footer__items:last-child {
+  margin-bottom: 0 !important;
+}
+
+.footer__copyright {
+  color: var(--ifm-font-color-base) !important;
+  opacity: 0.7 !important;
+  font-size: 0.875rem !important;
+  text-align: center !important;
+  padding-top: 1.5rem !important;
+  border-top: 1px solid var(--grid-line) !important;
+  margin-top: 1.5rem !important;
+}
+
+.footer__logo {
+  margin-top: 1rem !important;
+  max-width: var(--ifm-footer-logo-max-width) !important;
+}
+
+.footer__logo img {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(1%) saturate(7471%) hue-rotate(298deg) brightness(107%) contrast(101%) !important;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem 1rem !important;
+  }
+
+  .footer__items {
+    margin-bottom: 2rem !important;
+  }
+}
