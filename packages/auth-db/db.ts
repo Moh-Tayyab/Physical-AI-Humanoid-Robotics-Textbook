@@ -22,7 +22,7 @@ const getNeonClient = () => {
       throw new Error('DATABASE_URL is not set! Check your .env file.');
     }
 
-    cachedClient = neon(process.env.DATABASE_URL);
+    cachedClient = neon(process.env.DATABASE_URL.replace('postgresql+asyncpg://', 'postgresql://'));
   }
   return cachedClient;
 };

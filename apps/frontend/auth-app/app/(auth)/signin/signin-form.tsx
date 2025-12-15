@@ -139,7 +139,7 @@ export function SignInForm() {
 
         <Button
           type="submit"
-          className="w-full"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg transition-colors"
           disabled={isSubmitting}
         >
           {isSubmitting ? (
@@ -151,6 +151,12 @@ export function SignInForm() {
             'Sign in'
           )}
         </Button>
+
+        <div className="text-center mt-4">
+          <Link href="#" className="text-sm text-blue-600 hover:text-blue-500">
+            Forgot password?
+          </Link>
+        </div>
       </form>
     </Form>
   );

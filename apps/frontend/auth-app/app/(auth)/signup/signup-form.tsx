@@ -142,7 +142,7 @@ export function SignUpForm() {
 
         <Button
           type="submit"
-          className="w-full"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg transition-colors"
           disabled={isSubmitting}
         >
           {isSubmitting ? (
@@ -154,6 +154,18 @@ export function SignUpForm() {
             'Create account'
           )}
         </Button>
+
+        <div className="text-center mt-4 text-sm text-gray-600">
+          By signing up, you agree to our{' '}
+          <Link href="#" className="text-blue-600 hover:text-blue-500">
+            Terms of Service
+          </Link>{' '}
+          and{' '}
+          <Link href="#" className="text-blue-600 hover:text-blue-500">
+            Privacy Policy
+          </Link>
+          .
+        </div>
       </form>
     </Form>
   );
